@@ -1,0 +1,10 @@
+{
+  "name": "iansutherland.ca",
+  "description": "Personal site of Ian Sutherland",
+  "version": "1.0.0",
+  "author": "Ian Sutherland",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iansu/iansutherland.ca.git"
+  }
+}
