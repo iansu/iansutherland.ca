@@ -22,6 +22,7 @@ module.exports = {
           include: /assets\/images\/.*\.svg$/
         }
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ]
 };

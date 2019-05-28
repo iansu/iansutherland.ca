@@ -11,18 +11,22 @@
   },
   "scripts": {
     "start": "gatsby develop",
+    "start:production": "serve -s public",
     "build": "gatsby build",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.25",
     "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-react-svg": "^2.1.1",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "serve": "^11.0.0",
     "styled-components": "^4.2.0"
   }
 }
