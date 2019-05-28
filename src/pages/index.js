@@ -90,7 +90,7 @@ const HomePage = () => {
         <p>
           If you&rsquo;re interested in my open source work take a look at my{' '}
           <a href="https://github.com/iansu">GitHub</a> profile or follow me on{' '}
-          <a href="https://github.com/iansu">Twitter</a>. If you&rsquo;re interested in my
+          <a href="https://twitter.com/iansu">Twitter</a>. If you&rsquo;re interested in my
           professional work you can connect with me on{' '}
           <a href="http://www.linkedin.com/in/iansu">LinkedIn</a>.
         </p>
