@@ -11,6 +11,10 @@ const HeaderContainer = styled.div`
   flex-shrink: 0;
   align-items: center;
   margin: 2em 0 2.5em;
+
+  @media (max-width: 576px) {
+    margin: 1em 0 1.5em;
+  }
 `;
 
 const HeaderLogo = styled.div`
