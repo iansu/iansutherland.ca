@@ -72,7 +72,8 @@ const HomePage = () => {
             </HeroPhoto>
           </HeroProfile>
           <HeroText>
-            I&rsquo;m a full stack software developer living in Calgary, Canada. I&rsquo;m the maintainer of{' '}
+            I&rsquo;m a full stack software developer living in Calgary, Canada. I&rsquo;m the
+            maintainer of{' '}
             <a href="https://github.com/facebook/create-react-app">Create React App</a> and I also
             contribute to a number of other open source projects, including{' '}
             <a href="https://github.com/nodejs/node">Node.js</a>,{' '}
@@ -83,8 +84,8 @@ const HomePage = () => {
         <p>
           I&rsquo;ve been building software professionally for over 15 years. I have a B.Sc in
           Computer Science from the University of Calgary and I&rsquo;ve built web, mobile, desktop
-          and server applications in a variety of languages. I currently work as a Principle Software Engineer at{' '}
-          <a href="https://www.neofinancial.com/">Neo Financial</a>.
+          and server applications in a variety of languages. I currently work as a Principle
+          Software Engineer at <a href="https://www.neofinancial.com/">Neo Financial</a>.
         </p>
         <p>
           If you&rsquo;re interested in my open source work take a look at my{' '}

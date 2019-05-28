@@ -31,7 +31,8 @@ const FooterLinks = styled.div`
     color: #6c757d;
   }
 
-  a:hover, a:active {
+  a:hover,
+  a:active {
     color: #007bff;
   }
 
@@ -45,19 +46,23 @@ const FooterLinks = styled.div`
       height: 12px;
     }
   }
-`
+`;
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-  <FooterWrapper>
-    <div>&copy; {currentYear} Ian Sutherland. All Rights Reserved.</div>
-    <FooterLinks>
-      <a href="https://twitter.com/iansu"><Icon name="twitter" size="100%" /></a>
-      <a href="https://github.com/iansu"><Icon name="github" size="100%" /></a>
-    </FooterLinks>
-  </FooterWrapper>
+    <FooterWrapper>
+      <div>&copy; {currentYear} Ian Sutherland. All Rights Reserved.</div>
+      <FooterLinks>
+        <a href="https://twitter.com/iansu">
+          <Icon name="twitter" size="100%" />
+        </a>
+        <a href="https://github.com/iansu">
+          <Icon name="github" size="100%" />
+        </a>
+      </FooterLinks>
+    </FooterWrapper>
   );
 };
 

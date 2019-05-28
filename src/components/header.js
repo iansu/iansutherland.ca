@@ -36,7 +36,7 @@ const LogoContainer = styled.div`
     width: 32px;
     height: 32px;
   }
-`
+`;
 
 const HeaderLinks = styled.div`
   a {
@@ -51,7 +51,8 @@ const HeaderLinks = styled.div`
     color: #000;
   }
 
-  a:hover, a:active {
+  a:hover,
+  a:active {
     color: #007bff;
   }
 

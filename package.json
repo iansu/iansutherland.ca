@@ -13,7 +13,23 @@
     "start": "gatsby develop",
     "start:production": "serve -s public",
     "build": "gatsby build",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{ts,js,json,graphql,gql,yaml,yml,md}\"",
+    "format:check": "prettier --debug-check \"**/*.{ts,js,json,graphql,gql,yaml,yml,md}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "concurrent": false,
+    "linters": {
+      "*.{js,json,graphql,gql,yaml,yml,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -26,7 +42,12 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "serve": "^11.0.0",
     "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "serve": "^11.0.0"
   }
 }

@@ -3,7 +3,8 @@ module.exports = {
     title: 'Ian Sutherland',
     author: 'Ian Sutherland',
     tagline: 'Always Be Coding',
-    description: 'I’m a full stack software developer living in Calgary, Canada. I’m the maintainer of Create React App and I also contribute to a number of other open source projects, including Node.js, React and Yarn.',
+    description:
+      'I’m a full stack software developer living in Calgary, Canada. I’m the maintainer of Create React App and I also contribute to a number of other open source projects, including Node.js, React and Yarn.',
     siteUrl: 'https://iansutherland.ca/',
     twitter: 'https://twitter.com/iansu'
   },
