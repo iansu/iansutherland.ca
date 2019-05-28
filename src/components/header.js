@@ -13,7 +13,7 @@ const HeaderContainer = styled.div`
   margin: 2em 0 2.5em;
 
   @media (max-width: 576px) {
-    margin: 1em 0 1.5em;
+    margin: 0.8em 0 1.4em;
   }
 `;
 
