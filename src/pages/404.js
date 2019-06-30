@@ -1,16 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+import Page from '../components/page';
 import Layout from '../components/layout';
-
-const PageContainer = styled.div`
-  min-height: 100vh;
-`;
 
 const NotFoundPage = () => {
   return (
-    <PageContainer className="NotFoundPage">
+    <Page name="NotFoundPage">
       <Layout>
         <h2>Not Found</h2>
         <p>
@@ -18,7 +14,7 @@ const NotFoundPage = () => {
           <Link to="/">home</Link> page.
         </p>
       </Layout>
-    </PageContainer>
+    </Page>
   );
 };
 
