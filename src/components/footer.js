@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import Icon from './icon';
 
@@ -15,6 +16,23 @@ const FooterWrapper = styled.div`
 
   @media (max-width: 576px) {
     font-size: 0.75em;
+  }
+`;
+
+const FooterCopyright = styled.div`
+  a {
+    color: #6c757d;
+    border-bottom: 1px dotted #6c757d;
+  }
+
+  a:visited {
+    color: #6c757d;
+  }
+
+  a:hover,
+  a:active {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
   }
 `;
 
@@ -37,7 +55,7 @@ const FooterLinks = styled.div`
   }
 
   a + a {
-    margin-left: 0.6em;
+    margin-left: 0.6rem;
   }
 
   @media (max-width: 576px) {
@@ -53,7 +71,11 @@ const Footer = () => {
 
   return (
     <FooterWrapper>
-      <div>&copy; {currentYear} Ian Sutherland. All Rights Reserved.</div>
+      <FooterCopyright>
+        <div>
+          &copy; {currentYear} <Link to="/">Ian Sutherland</Link>. All Rights Reserved.
+        </div>
+      </FooterCopyright>
       <FooterLinks>
         <a href="https://twitter.com/iansu">
           <Icon name="twitter" size="100%" />

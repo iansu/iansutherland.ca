@@ -16,7 +16,8 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
@@ -24,7 +25,7 @@ a:hover {
 }
 
 a:visited, a:active {
-  color: #007bff;
+  color: black;
 }
 
 p + p {
