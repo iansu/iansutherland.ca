@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import 'normalize.css';
 
 import '../assets/css/index.css';
+import '../assets/css/utilities.css';
 
 import Head from '../components/head';
 import Header from '../components/header';
@@ -20,6 +21,24 @@ const LayoutContainer = styled.div`
 
 const PrimaryContent = styled.div`
   flex-grow: 1;
+
+  a {
+    color: black;
+    border-bottom: 2px solid rgba(177, 229, 251, 0.6);
+    box-shadow: inset 0 -8px 0 rgba(177, 229, 251, 0.6);
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: rgba(177, 229, 251, 0.6);
+    border-bottom: 2px solid rgba(177, 229, 251, 0.6);
+    text-decoration: none;
+  }
+
+  a:visited,
+  a:active {
+    color: black;
+  }
 `;
 
 const Layout = ({ children }) => (

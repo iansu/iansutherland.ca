@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import Icon from './icon';
 
@@ -14,6 +15,12 @@ const HeaderContainer = styled.div`
 
   @media (max-width: 576px) {
     margin: 0.8em 0 1.4em;
+  }
+
+  a.LogoLink {
+    display: block;
+    color: black;
+    text-decoration: none;
   }
 `;
 
@@ -80,12 +87,14 @@ const logoStyles = {
 
 const Header = () => (
   <HeaderContainer>
-    <HeaderLogo>
-      <LogoContainer>
-        <IanSutherlandLogo style={logoStyles} />
-      </LogoContainer>
-      <h1>Ian Sutherland</h1>
-    </HeaderLogo>
+    <Link to="/" className="LogoLink">
+      <HeaderLogo>
+        <LogoContainer>
+          <IanSutherlandLogo style={logoStyles} />
+        </LogoContainer>
+        <h1>Ian Sutherland</h1>
+      </HeaderLogo>
+    </Link>
     <HeaderLinks>
       <a href="https://twitter.com/iansu">
         <Icon name="twitter" size="100%" />
