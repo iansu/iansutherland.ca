@@ -11,7 +11,7 @@
     "url": "https://github.com/iansu/iansutherland.ca"
   },
   "engines": {
-    "node": "^10.0.0"
+    "node": ">=12.0.0"
   },
   "scripts": {
     "start": "gatsby develop",
@@ -28,13 +28,9 @@
     }
   },
   "lint-staged": {
-    "concurrent": false,
-    "linters": {
-      "*.{js,json,graphql,gql,yaml,yml,md}": [
-        "prettier --write",
-        "git add"
-      ]
-    }
+    "*.{js,json,graphql,gql,yaml,yml,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
