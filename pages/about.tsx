@@ -1,5 +1,4 @@
-import Head from 'next/head';
-
+import Head from '../components/head';
 import Layout from '../components/layout';
 import Profile from '../components/profile';
 import {
@@ -15,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ian Sutherland &ndash; About Me</title>
+        <title>About Me &ndash; Ian Sutherland &ndash; Always Be Coding</title>
       </Head>
 
       <Layout>

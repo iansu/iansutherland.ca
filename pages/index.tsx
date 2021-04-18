@@ -1,5 +1,4 @@
-import Head from 'next/head';
-
+import Head from '../components/head';
 import Layout from '../components/layout';
 import Profile from '../components/profile';
 

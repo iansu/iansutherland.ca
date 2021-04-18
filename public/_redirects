@@ -1,0 +1,2 @@
+/files/* http://files.iansutherland.ca/:splat 200!
+/.well-known/* http://files.iansutherland.ca/:splat 200!
