@@ -8,7 +8,7 @@ const Header = () => {
       <Link href="/">
         <a className="flex">
           <div className="w-10 h-10 md:w-16 md:h-16">
-            <Image src="/ian-sutherland-logo.svg" width={48} height={48} priority={true} />
+            <Image src="/ian-sutherland-logo.png" width={48} height={48} priority={true} />
           </div>
           <h1 className="font-bold text-2xl md:text-3xl mt-1 ml-3 md:mt-2 md:ml-0">
             Ian Sutherland
