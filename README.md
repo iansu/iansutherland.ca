@@ -1,17 +1,17 @@
 # IanSutherland.ca
 
-Personal site of Ian Sutherland.
+Personal site of Ian Sutherland
 
 ## Getting Started
 
 1. Clone this repo
-1. `yarn`
+1. `npm install`
 
 ## Development
 
-1. `yarn start`
-1. Go to [localhost:8000](http://localhost:8000)
+1. `npm start`
+1. Go to [localhost:3000](http://localhost:3000)
 
 ## Copyright
 
-&copy; 2019 Ian Sutherland. All Rights Reserved.
+&copy; 2021 Ian Sutherland. All Rights Reserved.
