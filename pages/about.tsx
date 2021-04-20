@@ -97,7 +97,7 @@ export default function Home() {
             <h3 className="text-lg font-bold mb-3">About This Site</h3>
             <p>
               This site is built with <a href="https://nextjs.org/">Next.js</a> and hosted on{' '}
-              <a href="https://www.netlify.com/">Netlify</a>. The icons are from{' '}
+              <a href="https://vercel.com/">Vercel</a>. The icons are from{' '}
               <a href="https://simpleicons.org/">Simple Icons</a>. The{' '}
               <a href="https://github.com/iansu/iansutherland.ca">source code</a> is available on
               GitHub under the MIT license.

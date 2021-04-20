@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/files/:match*",
+      "destination": "http://files.iansutherland.ca/:match*"
+    }
+  ]
+}
