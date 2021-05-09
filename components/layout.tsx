@@ -1,14 +1,15 @@
-import Header from './header';
-import Footer from './footer';
-import Content from './content';
+import Container from '@components/container';
+import Header from '@components/header';
+import Footer from '@components/footer';
+import Content from '@components/content';
 
 const Layout = ({ children }) => {
   return (
-    <div className="container max-w-3xl min-h-screen mx-auto px-4 flex flex-col">
+    <Container>
       <Header />
       <Content>{children}</Content>
       <Footer />
-    </div>
+    </Container>
   );
 };
 

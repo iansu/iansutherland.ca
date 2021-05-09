@@ -1,10 +1,6 @@
 import Head from 'next/head';
 
-interface Props {
-  children?: React.ReactChild | React.ReactChildren;
-}
-
-const HeadComponent = ({ children }: Props) => {
+const HeadComponent = ({ children }) => {
   return (
     <Head>
       {children}

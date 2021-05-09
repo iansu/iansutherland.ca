@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { GitHubIcon, TwitterIcon } from './icons';
+import { GitHubIcon, TwitterIcon } from '@components/icons';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

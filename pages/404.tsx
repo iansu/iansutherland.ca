@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import Head from '../components/head';
-import Layout from '../components/layout';
+import Head from '@components/head';
+import Layout from '@components/layout';
 
-export default function Home() {
+export default function NotFound() {
   return (
     <>
       <Head>

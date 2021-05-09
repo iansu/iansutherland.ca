@@ -1,6 +1,6 @@
-import Head from '../components/head';
-import Layout from '../components/layout';
-import Profile from '../components/profile';
+import Head from '@components/head';
+import Layout from '@components/layout';
+import Profile from '@components/profile';
 import {
   AngelListIcon,
   GitHubIcon,
@@ -8,7 +8,7 @@ import {
   LinkedInIcon,
   SpotifyIcon,
   TwitterIcon,
-} from '../components/icons';
+} from '@components/icons';
 
 export default function Home() {
   return (
