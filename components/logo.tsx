@@ -19,7 +19,6 @@ export const defaultProps: LogoProps = {
 };
 
 const Logo = (props: LogoProps) => {
-  props = { ...defaultProps, ...props };
   const { color, size, sizeSmall, textSize, textSizeSmall, withName } = props;
 
   return (
@@ -94,5 +93,7 @@ const Logo = (props: LogoProps) => {
     </Link>
   );
 };
+
+Logo.defaultProps = defaultProps;
 
 export default Logo;

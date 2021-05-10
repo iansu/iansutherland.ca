@@ -19,3 +19,43 @@
 .content-links a:active {
   color: black;
 }
+
+.color-angellist,
+.hover-color-angellist:hover {
+  color: #000;
+}
+
+.color-github,
+.hover-color-github:hover {
+  color: #181717;
+}
+
+.color-instagram,
+.hover-color-instagram:hover {
+  color: #e4405f;
+}
+
+.color-linkedin,
+.hover-color-linkedin:hover {
+  color: #0a66c2;
+}
+
+.color-spotify,
+.hover-color-spotify:hover {
+  color: #1ed760;
+}
+
+.color-twitch,
+.hover-color-twitch:hover {
+  color: #9146ff;
+}
+
+.color-twitter,
+.hover-color-twitter:hover {
+  color: #1da1f2;
+}
+
+.color-youtube,
+.hover-color-youtube:hover {
+  color: #f00;
+}

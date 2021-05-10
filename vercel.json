@@ -3,6 +3,10 @@
     {
       "source": "/files/:match*",
       "destination": "http://files.iansutherland.ca/:match*"
+    },
+    {
+      "source": "/keybase.txt",
+      "destination": "http://files.iansutherland.ca/keybase.txt"
     }
   ]
 }

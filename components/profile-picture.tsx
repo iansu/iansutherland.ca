@@ -11,7 +11,6 @@ export const defaultProps: ProfilePictureProps = {
 };
 
 const ProfilePicture = (props: ProfilePictureProps) => {
-  props = { ...defaultProps, ...props };
   const { borderSize, size } = props;
 
   return (
@@ -30,5 +29,7 @@ const ProfilePicture = (props: ProfilePictureProps) => {
     </div>
   );
 };
+
+ProfilePicture.defaultProps = defaultProps;
 
 export default ProfilePicture;

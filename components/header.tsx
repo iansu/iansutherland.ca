@@ -6,16 +6,10 @@ const Header = () => {
     <div className="flex justify-between pt-10 pb-12">
       <Logo withName={true} />
       <div className="flex mt-3 space-x-3">
-        <a
-          href="https://twitter.com/iansu"
-          className="inline-block w-5 h-5 md:w-6 md:h-6 hover:text-blue-500"
-        >
+        <a href="https://twitter.com/iansu" className="inline-block w-5 h-5 md:w-6 md:h-6">
           <TwitterIcon size="100%" />
         </a>
-        <a
-          href="https://github.com/iansu"
-          className="inline-block w-5 h-5 md:w-6 md:h-6 hover:text-blue-500"
-        >
+        <a href="https://github.com/iansu" className="inline-block w-5 h-5 md:w-6 md:h-6">
           <GitHubIcon size="100%" />
         </a>
       </div>

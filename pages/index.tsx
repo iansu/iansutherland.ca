@@ -4,33 +4,27 @@ import ProfilePicture from '@components/profile-picture';
 import Bio from '@components/bio';
 import { GitHubIcon, TwitterIcon } from '@components/icons';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
         <title>Ian Sutherland &ndash; Always Be Coding</title>
       </Head>
 
-      <Container paddingBreakpoint="lg" width="5xl">
-        <div className="pt-16 md:pt-24">
+      <Container paddingBreakpoint="lg" width="6xl">
+        <div className="pt-16 pb-16 md:pt-24 md:pb-24">
           <ProfilePicture size={192} borderSize={8} />
           <div className="text-center">
             <h1 className="font-bold text-3xl md:text-4xl mt-6">Ian Sutherland</h1>
-            <div className="mt-5 leading-6 text-gray-700 content-links">
+            <div className="mt-5 mx-auto max-w-4xl leading-6 text-lg text-gray-700 content-links">
               <Bio more={true} />
             </div>
             <div>
-              <div className="flex justify-center mt-8 space-x-3">
-                <a
-                  href="https://twitter.com/iansu"
-                  className="inline-block w-5 h-5 md:w-6 md:h-6 hover:text-blue-500"
-                >
+              <div className="flex justify-center mt-8 space-x-5">
+                <a href="https://twitter.com/iansu" className="inline-block w-8 h-8">
                   <TwitterIcon size="100%" />
                 </a>
-                <a
-                  href="https://github.com/iansu"
-                  className="inline-block w-5 h-5 md:w-6 md:h-6 hover:text-blue-500"
-                >
+                <a href="https://github.com/iansu" className="inline-block w-8 h-8">
                   <GitHubIcon size="100%" />
                 </a>
               </div>
@@ -40,4 +34,6 @@ export default function Home() {
       </Container>
     </>
   );
-}
+};
+
+export default Home;

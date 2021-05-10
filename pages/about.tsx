@@ -10,7 +10,7 @@ import {
   TwitterIcon,
 } from '@components/icons';
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
@@ -41,53 +41,49 @@ export default function Home() {
             <li className="mr-6 mb-2">
               <a
                 href="https://twitter.com/iansu"
-                className="inline-flex space-x-2 hover:text-blue-500"
-                data-hover-color="#1da1f2"
+                className="inline-flex space-x-2 hover-color-twitter"
               >
-                <TwitterIcon /> <span className="hover:text-black">Twitter</span>
+                <TwitterIcon /> <span>Twitter</span>
               </a>
             </li>
             <li className="mr-6 mb-2">
               <a
                 href="https://github.com/iansu"
-                className="inline-flex space-x-2 hover:text-blue-500"
+                className="inline-flex space-x-2 hover-color-github"
               >
-                <GitHubIcon /> <span className="hover:text-black">GitHub</span>
+                <GitHubIcon /> <span>GitHub</span>
               </a>
             </li>
             <li className="mr-6 mb-2">
               <a
                 href="https://www.linkedin.com/in/iansu"
-                className="inline-flex space-x-2 hover:text-blue-500"
-                data-hover-color="#0077B5"
+                className="inline-flex space-x-2 hover-color-linkedin"
               >
-                <LinkedInIcon /> <span className="hover:text-black">LinkedIn</span>
+                <LinkedInIcon /> <span>LinkedIn</span>
               </a>
             </li>
             <li className="mr-6 mb-2">
               <a
                 href="https://angel.co/iansu"
-                className="inline-flex space-x-2 hover:text-blue-500"
+                className="inline-flex space-x-2 hover-color-angellist"
               >
-                <AngelListIcon /> <span className="hover:text-black">AngelList</span>
+                <AngelListIcon /> <span>AngelList</span>
               </a>
             </li>
             <li className="mr-6 mb-2">
               <a
                 href="https://www.instagram.com/iansutherland/"
-                className="inline-flex space-x-2 hover:text-blue-500"
-                data-hover-color="#E4405F"
+                className="inline-flex space-x-2 hover-color-instagram"
               >
-                <InstagramIcon /> <span className="hover:text-black">Instagram</span>
+                <InstagramIcon /> <span>Instagram</span>
               </a>
             </li>
             <li className="mr-6 mb-2">
               <a
                 href="https://open.spotify.com/user/iansutherland.ca"
-                className="inline-flex space-x-2 hover:text-blue-500"
-                data-hover-color="#1ED760"
+                className="inline-flex space-x-2 hover-color-spotify"
               >
-                <SpotifyIcon /> <span className="hover:text-black">Spotify</span>
+                <SpotifyIcon /> <span>Spotify</span>
               </a>
             </li>
           </ul>
@@ -115,4 +111,6 @@ export default function Home() {
       </Layout>
     </>
   );
-}
+};
+
+export default About;

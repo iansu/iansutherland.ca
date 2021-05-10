@@ -19,8 +19,15 @@ Large.args = {
   size: '128px',
 };
 
-export const Color = Template.bind({});
-Color.args = {
+export const Colorful = Template.bind({});
+Colorful.args = {
   ...defaultProps,
-  color: '#1DA1F2',
+  colorful: true,
+};
+
+export const CustomColor = Template.bind({});
+CustomColor.args = {
+  ...defaultProps,
+  color: '#0f0',
+  hoverColor: '#f00',
 };

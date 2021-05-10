@@ -1,12 +1,5 @@
-export interface IconProps {
-  color?: string;
-  size?: string;
-}
-
-export const defaultProps: IconProps = {
-  color: 'currentColor',
-  size: '24px',
-};
+export { defaultProps } from './brand-icon';
+export type { IconProps } from './brand-icon';
 
 export * from './angellist-icon';
 export * from './github-icon';

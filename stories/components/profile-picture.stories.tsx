@@ -16,5 +16,6 @@ Default.args = defaultProps;
 export const Large = Template.bind({});
 Large.args = {
   ...defaultProps,
+  borderSize: 8,
   size: 192,
 };

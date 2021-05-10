@@ -10,7 +10,6 @@ export const defaultProps: ProfileProps = {
 };
 
 const Profile = (props: ProfileProps) => {
-  props = { ...defaultProps, ...props };
   const { more } = props;
 
   return (
@@ -25,5 +24,7 @@ const Profile = (props: ProfileProps) => {
     </div>
   );
 };
+
+Profile.defaultProps = defaultProps;
 
 export default Profile;

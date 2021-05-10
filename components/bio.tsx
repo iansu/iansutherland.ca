@@ -9,7 +9,6 @@ export const defaultProps: BioProps = {
 };
 
 const Bio = (props: BioProps) => {
-  props = { ...defaultProps, ...props };
   const { more } = props;
 
   return (
@@ -26,5 +25,7 @@ const Bio = (props: BioProps) => {
     </>
   );
 };
+
+Bio.defaultProps = defaultProps;
 
 export default Bio;

@@ -10,7 +10,6 @@ export const defaultProps: ContainerProps = {
 };
 
 const Container = (props: ContainerProps) => {
-  props = { ...defaultProps, ...props };
   const { children, paddingBreakpoint, width } = props;
 
   return (
@@ -21,5 +20,7 @@ const Container = (props: ContainerProps) => {
     </div>
   );
 };
+
+Container.defaultProps = defaultProps;
 
 export default Container;

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from '@components/head';
 import Layout from '@components/layout';
 
-export default function NotFound() {
+const NotFound = () => {
   return (
     <>
       <Head>
@@ -19,4 +19,6 @@ export default function NotFound() {
       </Layout>
     </>
   );
-}
+};
+
+export default NotFound;
