@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 export interface ProfilePictureProps {
-  borderSize?: number;
+  borderSize?: string;
   size?: number;
 }
 
 export const defaultProps: ProfilePictureProps = {
-  borderSize: 4,
+  borderSize: 'border-4',
   size: 128,
 };
 
@@ -15,7 +15,7 @@ const ProfilePicture = (props: ProfilePictureProps) => {
 
   return (
     <div
-      className={`mx-auto rounded-full bg-gray-200 border-${borderSize} border-gray-300 flex-shrink-0 overflow-hidden`}
+      className={`mx-auto rounded-full bg-gray-200 ${borderSize} border-gray-300 flex-shrink-0 overflow-hidden`}
       style={{ width: `${size}px`, height: `${size}px` }}
     >
       <Image

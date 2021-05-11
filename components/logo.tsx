@@ -1,30 +1,20 @@
 import Link from 'next/link';
 
 export interface LogoProps {
-  color?: string;
-  size?: number;
-  sizeSmall?: number;
-  textSize?: string;
-  textSizeSmall?: string;
   withName?: boolean;
 }
 
 export const defaultProps: LogoProps = {
-  color: 'currentColor',
-  size: 12,
-  sizeSmall: 10,
-  textSize: '3xl',
-  textSizeSmall: '2xl',
   withName: false,
 };
 
 const Logo = (props: LogoProps) => {
-  const { color, size, sizeSmall, textSize, textSizeSmall, withName } = props;
+  const { withName } = props;
 
   return (
     <Link href="/">
       <a className="flex items-center">
-        <div className={`w-${sizeSmall} h-${sizeSmall} md:w-${size} md:h-${size}`}>
+        <div className="w-10 h-10 md:w-12 md:h-12">
           <svg
             width="100%"
             height="100%"
@@ -48,7 +38,7 @@ const Logo = (props: LogoProps) => {
                     cx="329.933"
                     cy="452.306"
                     r="170.067"
-                    style={{ fill: color, stroke: 'white', strokeWidth: '0.34px' }}
+                    style={{ fill: 'currentColor', stroke: 'white', strokeWidth: '0.34px' }}
                   />
                 </g>
               </g>
@@ -85,9 +75,7 @@ const Logo = (props: LogoProps) => {
           </svg>
         </div>
         {withName && (
-          <h1 className={`font-bold text-black text-${textSizeSmall} md:text-${textSize} ml-3`}>
-            Ian Sutherland
-          </h1>
+          <h1 className="font-bold text-black text-2xl md:text-3xl ml-3">Ian Sutherland</h1>
         )}
       </a>
     </Link>

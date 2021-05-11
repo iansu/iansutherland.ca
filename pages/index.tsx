@@ -11,9 +11,9 @@ const Home = () => {
         <title>Ian Sutherland &ndash; Always Be Coding</title>
       </Head>
 
-      <Container paddingBreakpoint="lg" width="6xl">
+      <Container width="max-w-6xl" paddingBreakpoint="lg:px-0">
         <div className="pt-16 pb-16 md:pt-24 md:pb-24">
-          <ProfilePicture size={192} borderSize={8} />
+          <ProfilePicture size={192} borderSize="border-8" />
           <div className="text-center">
             <h1 className="font-bold text-3xl md:text-4xl mt-6">Ian Sutherland</h1>
             <div className="mt-5 mx-auto max-w-4xl leading-6 text-lg text-gray-700 content-links">

@@ -5,8 +5,8 @@ export interface ContainerProps {
 }
 
 export const defaultProps: ContainerProps = {
-  paddingBreakpoint: 'md',
-  width: '3xl',
+  paddingBreakpoint: 'md:px-0',
+  width: 'max-w-3xl',
 };
 
 const Container = (props: ContainerProps) => {
@@ -14,7 +14,7 @@ const Container = (props: ContainerProps) => {
 
   return (
     <div
-      className={`container max-w-${width} min-h-screen mx-auto px-4 ${paddingBreakpoint}:px-0 flex flex-col`}
+      className={`container ${width} min-h-screen mx-auto px-4 ${paddingBreakpoint} flex flex-col`}
     >
       {children}
     </div>
