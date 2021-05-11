@@ -1,17 +1,39 @@
-import Head from '../components/head';
-import Layout from '../components/layout';
-import Profile from '../components/profile';
+import Head from '@components/head';
+import Container from '@components/container';
+import ProfilePicture from '@components/profile-picture';
+import Bio from '@components/bio';
+import { GitHubIcon, TwitterIcon } from '@components/icons';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
         <title>Ian Sutherland &ndash; Always Be Coding</title>
       </Head>
 
-      <Layout>
-        <Profile more={true} />
-      </Layout>
+      <Container width="max-w-6xl" paddingBreakpoint="lg:px-0">
+        <div className="pt-16 pb-16 md:pt-24 md:pb-24">
+          <ProfilePicture size={192} borderSize="border-8" />
+          <div className="text-center">
+            <h1 className="font-bold text-3xl md:text-4xl mt-6">Ian Sutherland</h1>
+            <div className="mt-5 mx-auto max-w-4xl leading-6 text-lg text-gray-700 content-links">
+              <Bio more={true} />
+            </div>
+            <div>
+              <div className="flex justify-center mt-8 space-x-5">
+                <a href="https://twitter.com/iansu" className="inline-block w-8 h-8">
+                  <TwitterIcon size="100%" />
+                </a>
+                <a href="https://github.com/iansu" className="inline-block w-8 h-8">
+                  <GitHubIcon size="100%" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
     </>
   );
-}
+};
+
+export default Home;

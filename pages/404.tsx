@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import Head from '../components/head';
-import Layout from '../components/layout';
+import Head from '@components/head';
+import Layout from '@components/layout';
 
-export default function Home() {
+const NotFound = () => {
   return (
     <>
       <Head>
@@ -19,4 +19,6 @@ export default function Home() {
       </Layout>
     </>
   );
-}
+};
+
+export default NotFound;
