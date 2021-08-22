@@ -6,6 +6,7 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
+  PolyworkIcon,
   SpotifyIcon,
   TwitterIcon,
 } from '@components/icons';
@@ -39,51 +40,38 @@ const About = () => {
           <h3 className="text-lg font-bold mb-3">Elsewhere</h3>
           <ul className="flex flex-wrap list-none">
             <li className="mr-6 mb-2">
-              <a
-                href="https://twitter.com/iansu"
-                className="inline-flex space-x-2 hover-color-twitter"
-              >
-                <TwitterIcon /> <span>Twitter</span>
+              <a href="https://twitter.com/iansu">
+                <TwitterIcon />
               </a>
             </li>
             <li className="mr-6 mb-2">
-              <a
-                href="https://github.com/iansu"
-                className="inline-flex space-x-2 hover-color-github"
-              >
-                <GitHubIcon /> <span>GitHub</span>
+              <a href="https://github.com/iansu">
+                <GitHubIcon />
               </a>
             </li>
             <li className="mr-6 mb-2">
-              <a
-                href="https://www.linkedin.com/in/iansu"
-                className="inline-flex space-x-2 hover-color-linkedin"
-              >
-                <LinkedInIcon /> <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/iansu">
+                <LinkedInIcon />
               </a>
             </li>
             <li className="mr-6 mb-2">
-              <a
-                href="https://angel.co/iansu"
-                className="inline-flex space-x-2 hover-color-angellist"
-              >
-                <AngelListIcon /> <span>AngelList</span>
+              <a href="https://www.polywork.com/iansu">
+                <PolyworkIcon />
               </a>
             </li>
             <li className="mr-6 mb-2">
-              <a
-                href="https://www.instagram.com/iansutherland/"
-                className="inline-flex space-x-2 hover-color-instagram"
-              >
-                <InstagramIcon /> <span>Instagram</span>
+              <a href="https://angel.co/iansu">
+                <AngelListIcon />
               </a>
             </li>
             <li className="mr-6 mb-2">
-              <a
-                href="https://open.spotify.com/user/iansutherland.ca"
-                className="inline-flex space-x-2 hover-color-spotify"
-              >
-                <SpotifyIcon /> <span>Spotify</span>
+              <a href="https://www.instagram.com/iansutherland/">
+                <InstagramIcon />
+              </a>
+            </li>
+            <li className="mr-6 mb-2">
+              <a href="https://open.spotify.com/user/iansutherland.ca">
+                <SpotifyIcon />
               </a>
             </li>
           </ul>
