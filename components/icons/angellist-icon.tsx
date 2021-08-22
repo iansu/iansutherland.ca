@@ -1,9 +1,12 @@
+import { useTheme } from 'next-themes';
+
 import BrandIcon, { defaultProps, IconProps } from '@components/icons/brand-icon';
 
 const AngelListIcon = (props: IconProps) => {
+  const { resolvedTheme } = useTheme();
   const { color, colorful, hoverColor, size } = props;
   const brandColor = '#000';
-  const brandHoverColor = '#464646';
+  const brandHoverColor = resolvedTheme === 'dark' ? '#fff' : '#464646';
   const iconColor = colorful ? brandColor : color;
   const iconHoverColor = hoverColor ?? brandHoverColor;
 

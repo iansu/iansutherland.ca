@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 export interface BrandIconProps {
@@ -36,6 +37,13 @@ const BrandIconWrapper = styled.span<BrandIconProps>`
 
 const BrandIcon = (props: BrandIconProps) => {
   const { children, color, hoverColor, size } = props;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <div style={{ height: size }}></div>;
+  }
 
   return (
     <BrandIconWrapper size={size} color={color} hoverColor={hoverColor}>
