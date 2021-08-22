@@ -1,6 +1,6 @@
 # IanSutherland.ca
 
-Personal site of Ian Sutherland
+Personal site of [Ian Sutherland](https://iansutherland.ca)
 
 ## Getting Started
 
@@ -11,6 +11,10 @@ Personal site of Ian Sutherland
 
 1. `npm start`
 1. Go to [localhost:3000](http://localhost:3000)
+
+### Storybook
+
+1. `npm run storybook`
 
 ## Copyright
 

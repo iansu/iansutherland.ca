@@ -9,7 +9,7 @@ interface ThemeToggleProps {
 
 export const defaultProps: ThemeToggleProps = {
   className: 'cursor-pointer',
-  iconSize: '26px',
+  iconSize: '100%',
 };
 
 const ThemeToggle = (props: ThemeToggleProps) => {
@@ -24,7 +24,7 @@ const ThemeToggle = (props: ThemeToggleProps) => {
   }
 
   return (
-    <div style={{ height: iconSize }}>
+    <div className="w-6 h-6 md:w-7 md:h-7" style={{ marginTop: '-1px' }}>
       {(!resolvedTheme || resolvedTheme === 'light') && (
         <MoonIcon
           width={iconSize}

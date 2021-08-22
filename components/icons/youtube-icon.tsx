@@ -16,7 +16,7 @@ const YouTubeIcon = (props: IconProps) => {
         id="b80c53a0-fbf6-4494-bbaf-81c896ec0e15"
         data-name="youtube-icon"
         xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
+        fill="currentcolor"
       >
         <title>YouTube</title>
         <g id="4dc291fc-8aac-47e7-9145-5c0baf1f8b01" data-name="youtube">

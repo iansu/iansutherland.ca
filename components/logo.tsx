@@ -50,7 +50,7 @@ const Logo = (props: LogoProps) => {
                     cx="329.933"
                     cy="452.306"
                     r="170.067"
-                    style={{ fill: 'currentColor', stroke, strokeWidth: '0.34px' }}
+                    style={{ fill: 'currentcolor', stroke, strokeWidth: '0.34px' }}
                   />
                 </g>
               </g>
