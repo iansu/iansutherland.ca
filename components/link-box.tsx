@@ -11,11 +11,12 @@ export interface LinkBoxProps {
 }
 
 export const defaultProps = {
-  element: 'li',
+  as: 'li',
+  internal: false,
 };
 
 const LinkBox = (props: LinkBoxProps) => {
-  const { className, description, as, href, icon, internal, title } = props;
+  const { as, className, description, href, icon, internal, title } = props;
 
   const Container = as as keyof JSX.IntrinsicElements;
 
