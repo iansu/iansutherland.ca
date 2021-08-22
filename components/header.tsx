@@ -1,5 +1,6 @@
-import Logo from './logo';
+import Logo from '@components/logo';
 import { GitHubIcon, TwitterIcon } from '@components/icons';
+import ThemeToggle from '@components/theme-toggle';
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
         <a href="https://github.com/iansu" className="inline-block w-5 h-5 md:w-6 md:h-6">
           <GitHubIcon size="100%" />
         </a>
+        <ThemeToggle />
       </div>
     </div>
   );

@@ -1,9 +1,12 @@
+import { useTheme } from 'next-themes';
+
 import BrandIcon, { defaultProps, IconProps } from '@components/icons/brand-icon';
 
 const GitHubIcon = (props: IconProps) => {
+  const { resolvedTheme } = useTheme();
   const { color, colorful, hoverColor, size } = props;
   const brandColor = '#181717';
-  const brandHoverColor = colorful ? '#464646' : brandColor;
+  const brandHoverColor = resolvedTheme === 'dark' ? '#fff' : '#464646';
   const iconColor = colorful ? brandColor : color;
   const iconHoverColor = hoverColor ?? brandHoverColor;
 
