@@ -24,7 +24,7 @@ const ThemeToggle = (props: ThemeToggleProps) => {
   }
 
   return (
-    <div className="w-5 h-5 md:w-6 md:h-6">
+    <div className="w-6 h-6 md:w-7 md:h-7" style={{ marginTop: '-1px' }}>
       {(!resolvedTheme || resolvedTheme === 'light') && (
         <MoonIcon
           width={iconSize}

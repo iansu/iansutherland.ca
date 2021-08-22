@@ -24,9 +24,9 @@ const About = () => {
           <p>
             I&rsquo;ve been building software professionally for over 15 years. I have a B.Sc. in
             Computer Science from the University of Calgary and I&rsquo;ve built web, mobile,
-            desktop and server applications in a variety of languages. I currently work as a
-            Principle Software Engineer at <a href="https://www.neofinancial.com/">Neo Financial</a>
-            .
+            desktop and server applications in a variety of languages. I'm currently an engineering
+            lead and DX team lead at <a href="https://www.neofinancial.com/">Neo Financial</a>{' '}
+            (we're <a href="https://www.neofinancial.com/jobs">hiring</a>).
           </p>
           <p>
             If you&rsquo;re interested in my open source work take a look at my{' '}

@@ -1,7 +1,7 @@
 import Head from '@components/head';
 import Layout from '@components/layout';
 
-import Profile from '@components/profile';
+import ProfilePicture from '@components/profile-picture';
 import LinkBox from '@components/link-box';
 import { GitHubIcon, LinkedInIcon, PolyworkIcon, TwitterIcon } from '@components/icons';
 
@@ -13,10 +13,14 @@ const Links = () => {
       </Head>
 
       <Layout>
-        <div className="mb-8">
-          <Profile more={true} />
-        </div>
         <ul>
+          <LinkBox
+            href="/about"
+            internal={true}
+            icon={<ProfilePicture size={48} borderSize="border-0" />}
+            title="IanSutherland.ca"
+            description="Read my bio or my blog"
+          />
           <LinkBox
             href="https://twitter.com/iansu"
             icon={<TwitterIcon colorful={true} size="48px" />}

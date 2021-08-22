@@ -15,7 +15,7 @@ const ProfilePicture = (props: ProfilePictureProps) => {
 
   return (
     <div
-      className={`mx-auto rounded-full bg-gray-200 dark:bg-gray-500 ${borderSize} border-gray-300 dark:border-gray-500 flex-shrink-0 overflow-hidden`}
+      className={`mx-auto rounded-full bg-gray-200 dark:bg-gray-500 ${borderSize} border-gray-300 dark:border-gray-600 flex-shrink-0 overflow-hidden`}
       style={{ width: `${size}px`, height: `${size}px` }}
     >
       <Image
