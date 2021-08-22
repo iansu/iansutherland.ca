@@ -5,6 +5,7 @@ export * from './angellist-icon';
 export * from './github-icon';
 export * from './instagram-icon';
 export * from './linkedin-icon';
+export * from './neo-icon';
 export * from './polywork-icon';
 export * from './spotify-icon';
 export * from './twitch-icon';

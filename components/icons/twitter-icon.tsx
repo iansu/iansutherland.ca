@@ -16,7 +16,7 @@ const TwitterIcon = (props: IconProps) => {
         id="b80c53a0-fbf6-4494-bbaf-81c896ec0e14"
         data-name="twitter-icon"
         xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
+        fill="currentcolor"
       >
         <title>Twitter</title>
         <g id="4dc291fc-8aac-47e7-9145-5c0baf1f8af9" data-name="twitter">

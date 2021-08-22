@@ -25,7 +25,8 @@ export const defaultProps = {
 };
 
 const BrandIconWrapper = styled.span<BrandIconProps>`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: ${(props) => props.size};
   height: ${(props) => props.size};
   color: ${(props) => props.color};
