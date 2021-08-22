@@ -4,12 +4,12 @@ import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 interface ThemeToggleProps {
   className?: string;
-  iconSize?: number;
+  iconSize?: string;
 }
 
 export const defaultProps: ThemeToggleProps = {
   className: 'cursor-pointer',
-  iconSize: 26,
+  iconSize: '26px',
 };
 
 const ThemeToggle = (props: ThemeToggleProps) => {
@@ -20,13 +20,11 @@ const ThemeToggle = (props: ThemeToggleProps) => {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div style={{ height: `${iconSize}px` }}></div>;
+    return <div style={{ height: iconSize }}></div>;
   }
 
-  console.log(resolvedTheme);
-
   return (
-    <div style={{ height: `${iconSize}px` }}>
+    <div style={{ height: iconSize }}>
       {(!resolvedTheme || resolvedTheme === 'light') && (
         <MoonIcon
           width={iconSize}

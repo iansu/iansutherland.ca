@@ -42,7 +42,7 @@ const BrandIcon = (props: BrandIconProps) => {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return null;
+    return <div style={{ height: size }}></div>;
   }
 
   return (
