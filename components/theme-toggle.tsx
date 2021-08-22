@@ -20,7 +20,7 @@ const ThemeToggle = (props: ThemeToggleProps) => {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return null;
+    return <div style={{ height: `${iconSize}px` }}></div>;
   }
 
   console.log(resolvedTheme);
