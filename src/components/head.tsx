@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 const HeadComponent = ({ children }) => {
   return (
@@ -23,8 +24,8 @@ I’m a full stack software developer living in Calgary, Canada. I’m the maint
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="iansu" />
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12870369-1"></script>
-      <script
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-12870369-1"></Script>
+      <Script
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

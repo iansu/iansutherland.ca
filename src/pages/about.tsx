@@ -26,7 +26,7 @@ const About = () => {
             Computer Science from the University of Calgary and I&rsquo;ve built web, mobile,
             desktop and server applications in a variety of languages. I'm currently an engineering
             lead and DX team lead at <a href="https://www.neofinancial.com/">Neo Financial</a>{' '}
-            (we're <a href="https://www.neofinancial.com/jobs">hiring</a>).
+            (we're <a href="https://www.neofinancial.com/careers">hiring</a>).
           </p>
           <p>
             If you&rsquo;re interested in my open source work take a look at my{' '}
@@ -35,9 +35,24 @@ const About = () => {
             professional work you can connect with me on{' '}
             <a href="https://www.linkedin.com/in/iansu">LinkedIn</a>.
           </p>
+          <p>
+            Want to know what I'm working on this month? Take a look at my list of{' '}
+            <a href="https://pages.iansutherland.ca/current-work">current projects</a>. Want to know
+            what equipment I use? Take a look at my{' '}
+            <a href="https://pages.iansutherland.ca/uses">list of gear</a>.
+          </p>
         </div>
         <div className="mt-12">
-          <h3 className="text-lg font-bold mb-3">Elsewhere</h3>
+          <div className="content-links">
+            <h3 className="text-lg font-bold mb-3">Speaking</h3>
+            <p>
+              I&rsquo;ve spoken at conferences and meetups as well as appeared on podcasts and
+              livestreams. Take a look at my{' '}
+              <a href="https://pages.iansutherland.ca/speaking">past talks</a> and if you&rsquo;re
+              interested in having me speak or be a guest, please get in touch.
+            </p>
+          </div>
+          <h3 className="text-lg font-bold mb-3 mt-12">Elsewhere</h3>
           <ul className="flex flex-wrap list-none">
             <li className="mr-6 mb-2">
               <a href="https://twitter.com/iansu">
