@@ -1,6 +1,6 @@
 import * as nextImage from 'next/image';
 
-import '../styles/global.css';
+import '../src/styles/global.css';
 
 Object.defineProperty(nextImage, 'default', {
   configurable: true,

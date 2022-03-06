@@ -11,11 +11,12 @@ module.exports = {
       shouldExtractLiteralValuesFromEnum: true,
       propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
     },
+    staticDirs: ['../public'],
   },
   webpackFinal: async (config) => {
     config.resolve.alias = {
-      '@components': path.resolve(__dirname, '..', 'components'),
-      '@pages': path.resolve(__dirname, '..', 'pages'),
+      '@components': path.resolve(__dirname, '..', 'src', 'components'),
+      '@pages': path.resolve(__dirname, '..', 'src', 'pages'),
     };
 
     return config;
