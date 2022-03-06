@@ -20,10 +20,11 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook",
     "clean": "rimraf .next",
+    "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
     "prepare": "husky install",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged && next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -43,6 +44,8 @@
     "@types/react": "^17.0.39",
     "@types/styled-components": "^5.1.24",
     "autoprefixer": "^10.4.2",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
     "husky": "^7.0.4",
     "postcss": "^8.4.7",
     "prettier": "^2.5.1",

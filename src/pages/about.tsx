@@ -24,9 +24,10 @@ const About = () => {
           <p>
             I&rsquo;ve been building software professionally for over 15 years. I have a B.Sc. in
             Computer Science from the University of Calgary and I&rsquo;ve built web, mobile,
-            desktop and server applications in a variety of languages. I'm currently an engineering
-            lead and DX team lead at <a href="https://www.neofinancial.com/">Neo Financial</a>{' '}
-            (we're <a href="https://www.neofinancial.com/careers">hiring</a>).
+            desktop and server applications in a variety of languages. I&rsquo;m currently an
+            engineering lead and DX team lead at{' '}
+            <a href="https://www.neofinancial.com/">Neo Financial</a> (we&rsquo;re{' '}
+            <a href="https://www.neofinancial.com/careers">hiring</a>).
           </p>
           <p>
             If you&rsquo;re interested in my open source work take a look at my{' '}
@@ -36,7 +37,7 @@ const About = () => {
             <a href="https://www.linkedin.com/in/iansu">LinkedIn</a>.
           </p>
           <p>
-            Want to know what I'm working on this month? Take a look at my list of{' '}
+            Want to know what I&rsquo;m working on this month? Take a look at my list of{' '}
             <a href="https://pages.iansutherland.ca/current-work">current projects</a>. Want to know
             what equipment I use? Take a look at my{' '}
             <a href="https://pages.iansutherland.ca/uses">list of gear</a>.

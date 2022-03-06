@@ -25,6 +25,7 @@ const ProfilePicture = (props: ProfilePictureProps) => {
         layout="responsive"
         objectPosition="-4% -1.5%"
         priority={true}
+        alt="Profile picture"
       />
     </div>
   );
