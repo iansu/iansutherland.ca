@@ -4,10 +4,8 @@ import Profile from '@components/profile';
 import {
   AngelListIcon,
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
   PolyworkIcon,
-  SpotifyIcon,
   TwitterIcon,
 } from '@components/icons';
 
@@ -78,16 +76,6 @@ const About = () => {
             <li className="mr-6 mb-2">
               <a href="https://angel.co/iansu">
                 <AngelListIcon />
-              </a>
-            </li>
-            <li className="mr-6 mb-2">
-              <a href="https://www.instagram.com/iansutherland/">
-                <InstagramIcon />
-              </a>
-            </li>
-            <li className="mr-6 mb-2">
-              <a href="https://open.spotify.com/user/iansutherland.ca">
-                <SpotifyIcon />
               </a>
             </li>
           </ul>
