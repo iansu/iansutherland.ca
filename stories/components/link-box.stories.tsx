@@ -12,7 +12,7 @@ export default {
 
 const Template: Story = (args) => (
   <Container>
-    <div className="mt-4 md:ml-8 leading-6 text-gray-700 content-links">
+    <div className="content-links mt-4 leading-6 text-gray-700 md:ml-8">
       <LinkBox
         {...args}
         title="GitHub"
