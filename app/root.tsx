@@ -1,6 +1,18 @@
-import { Links, LinksFunction, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from 'remix';
+import {
+  Link,
+  Links,
+  LinksFunction,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+  useCatch,
+} from 'remix';
 import type { MetaFunction } from 'remix';
 import { ThemeProvider } from 'remix-theme';
+
+import Layout from '~/components/layout';
 
 import styles from './styles/tailwind.css';
 
@@ -58,4 +70,56 @@ I’m a full stack software developer living in Calgary, Canada. I’m the maint
       </html>
     </ThemeProvider>
   );
+}
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  console.error(error);
+
+  return (
+    <html lang="en">
+      <head>
+        <title>Not Found &ndash; Ian Sutherland &ndash; Always Be Coding</title>
+        <Links />
+      </head>
+      <body className="bg-white transition duration-500 dark:bg-gray-900">
+        <Layout>
+          <h2 className="mb-3 text-2xl font-bold">Not Found</h2>
+          <p className="content-links">
+            The page you&rsquo;re looking for can&rsquo;t be found. Return to the{' '}
+            <Link to="/">home</Link> page.
+          </p>
+        </Layout>
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+
+  console.error('CatchBoundary', caught);
+
+  if (caught.status === 404) {
+    return (
+      <html lang="en">
+        <head>
+          <title>Not Found &ndash; Ian Sutherland &ndash; Always Be Coding</title>
+          <Links />
+        </head>
+        <body className="bg-white transition duration-500 dark:bg-gray-900">
+          <Layout>
+            <h2 className="mb-3 text-2xl font-bold">Not Found</h2>
+            <p className="content-links">
+              The page you&rsquo;re looking for can&rsquo;t be found. Return to the{' '}
+              <Link to="/">home</Link> page.
+            </p>
+          </Layout>
+          <Scripts />
+        </body>
+      </html>
+    );
+  }
+
+  throw new Error(`Unhandled error: ${caught.status}`);
 }
