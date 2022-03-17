@@ -18,4 +18,4 @@ Personal site of [Ian Sutherland](https://iansutherland.ca)
 
 ## Copyright
 
-&copy; 2021 Ian Sutherland. All Rights Reserved.
+&copy; 2022 Ian Sutherland. All Rights Reserved.

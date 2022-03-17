@@ -1,7 +1,7 @@
 {
   "name": "iansutherland.ca",
   "description": "Personal site of Ian Sutherland",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Ian Sutherland",
   "license": "MIT",
   "private": true,
@@ -10,46 +10,58 @@
     "type": "git",
     "url": "https://github.com/iansu/iansutherland.ca"
   },
+  "sideEffects": false,
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14"
   },
   "scripts": {
-    "start": "next dev",
-    "start:production": "next start",
-    "build": "next build",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "storybook:build": "build-storybook",
-    "clean": "rimraf .next",
-    "lint": "next lint",
+    "start": "run-p dev:*",
+    "start:build": "cross-env NODE_ENV=production remix-serve build",
+    "build": "run-s build:*",
+    "build:css": "npm run generate:css -- --minify",
+    "build:remix": "cross-env NODE_ENV=production remix build",
+    "clean": "rimraf .cache",
+    "dev": "run-p dev:*",
+    "dev:css": "npm run generate:css -- --watch",
+    "dev:remix": "cross-env NODE_ENV=development remix dev",
+    "generate:css": "npx tailwindcss -i ./app/styles/global.css -o ./app/styles/tailwind.css",
+    "lint": "eslint --ext .js,.ts,.tsx ./app",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
-    "prepare": "husky install",
-    "precommit": "pretty-quick --staged && next lint"
+    "postinstall": "remix setup node",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*app/.{ts,tsx,js}": [
+      "eslint"
+    ],
+    "*.{ts,tsx,js,json,yaml,yml,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.5",
-    "next": "^12.1.0",
-    "next-themes": "^0.1.1",
+    "@heroicons/react": "^1.0.6",
+    "@remix-run/react": "^1.3.1",
+    "@remix-run/vercel": "^1.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "remix": "^1.3.1",
+    "remix-theme": "^0.0.4",
+    "simple-icons": "^6.14.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.7",
-    "@types/react": "^17.0.39",
-    "@types/styled-components": "^5.1.24",
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
+    "@remix-run/dev": "^1.3.1",
+    "@remix-run/eslint-config": "^1.3.1",
+    "@remix-run/serve": "^1.3.1",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.11.0",
     "husky": "^7.0.4",
-    "postcss": "^8.4.7",
-    "prettier": "^2.5.1",
-    "pretty-quick": "^3.1.3",
+    "lint-staged": "^12.3.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.0",
+    "prettier-plugin-tailwindcss": "^0.1.8",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.2"
