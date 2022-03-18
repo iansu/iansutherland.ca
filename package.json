@@ -32,7 +32,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*app/.{ts,tsx,js}": [
+    "{app,server}/.{ts,tsx,js}": [
       "eslint"
     ],
     "*.{ts,tsx,js,json,yaml,yml,md}": [

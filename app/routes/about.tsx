@@ -1,5 +1,6 @@
 import { MetaFunction } from 'remix';
 
+import { getTitle } from '~/lib/meta';
 import Layout from '~/components/layout';
 import Profile from '~/components/profile';
 import {
@@ -12,13 +13,13 @@ import {
 
 export const meta: MetaFunction = () => {
   return {
-    title: 'About Me &ndash; Ian Sutherland &ndash; Always Be Coding',
+    title: getTitle('About Me'),
     description:
       'I&rsquo;m a full stack software developer living in Calgary, Canada. I&rsquo;m the maintainer of Create React App and I contribute to Node.js. I also work on a number of other open source projects, mostly in the JavaScript ecosystem.',
   };
 };
 
-const About = () => {
+export default function About() {
   return (
     <Layout>
       <Profile />
@@ -107,6 +108,4 @@ const About = () => {
       </div>
     </Layout>
   );
-};
-
-export default About;
+}

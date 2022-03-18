@@ -1,5 +1,6 @@
 import { MetaFunction } from 'remix';
 
+import { getTitle } from '~/lib/meta';
 import Layout from '~/components/layout';
 import ProfilePicture from '~/components/profile-picture';
 import LinkBox from '~/components/link-box';
@@ -7,9 +8,8 @@ import { TwitterIcon, GitHubIcon, LinkedInIcon, PolyworkIcon, NeoIcon } from '~/
 
 export const meta: MetaFunction = () => {
   return {
-    title: 'Links &ndash; Ian Sutherland &ndash; Always Be Coding',
-    description:
-      'I&rsquo;m a full stack software developer living in Calgary, Canada. I&rsquo;m the maintainer of Create React App and I contribute to Node.js. I also work on a number of other open source projects, mostly in the JavaScript ecosystem.',
+    title: getTitle('Links'),
+    description: 'Links to my various social media and other online profiles.',
   };
 };
 
