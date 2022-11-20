@@ -1,0 +1,35 @@
+---
+import Layout from '@layouts/default.astro';
+import Container from '@components/container.astro';
+import ThemeToggle from '../components/theme-toggle.astro';
+import ProfilePicture from '../components/profile-picture.astro';
+import Bio from '@components/bio.astro';
+import { TwitterIcon, GitHubIcon } from '@components/icons.astro';
+---
+
+<Layout>
+  <Container width="max-w-6xl" paddingBreakpoint="lg:px-0">
+    <div class="mt-6 flex flex-row-reverse">
+      <ThemeToggle />
+    </div>
+    <div class="pt-8 pb-16 md:pt-12 md:pb-24">
+      <ProfilePicture size={192} borderSize="border-8" />
+      <div class="text-center">
+        <h1 class="mt-6 text-3xl font-bold md:text-4xl dark:text-white">Ian Sutherland</h1>
+        <div class="content-links mx-auto mt-5 max-w-4xl text-lg leading-6 text-gray-700 dark:text-gray-200">
+          <Bio more={true} />
+        </div>
+        <div>
+          <div class="mt-8 flex justify-center space-x-5 text-black dark:text-white">
+            <a href="https://twitter.com/iansu" class="inline-block h-8 w-8">
+              <TwitterIcon />
+            </a>
+            <a href="https://github.com/iansu" class="inline-block h-8 w-8">
+              <GitHubIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

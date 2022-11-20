@@ -1,0 +1,17 @@
+---
+import ProfilePicture from '@components/profile-picture.astro';
+import Bio from '@components/bio.astro';
+
+export interface Props {
+  more?: boolean;
+}
+
+const { more = false } = Astro.props;
+---
+
+<div class="content-links flex flex-col rounded-lg bg-gray-100 px-4 py-4 text-lg dark:bg-gray-800 md:flex-row">
+  <ProfilePicture />
+  <div class="mt-4 leading-6 text-gray-700 dark:text-gray-300 md:ml-8">
+    <Bio more={more} />
+  </div>
+</div>

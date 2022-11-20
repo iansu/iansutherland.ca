@@ -1,0 +1,13 @@
+---
+export interface Props {
+  children: any;
+  paddingBreakpoint?: string;
+  width?: string;
+}
+
+const { paddingBreakpoint = 'md:px-0', width = 'max-w-3xl' } = Astro.props;
+---
+
+<div class={`container ${width} mx-auto min-h-screen px-4 ${paddingBreakpoint} flex flex-col`}>
+  <slot />
+</div>

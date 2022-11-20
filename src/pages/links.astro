@@ -1,0 +1,29 @@
+---
+import Layout from '@layouts/page.astro';
+import ProfilePicture from '@components/profile-picture.astro';
+import LinkBox from '@components/link-box.astro';
+import { GitHubIcon, LinkedInIcon, NeoIcon, PolyworkIcon, TwitterIcon } from '@components/icons.astro';
+---
+
+<Layout title="Links" description="Links to my various social media and other online profiles.">
+  <ul>
+    <LinkBox href="/" title="IanSutherland.ca" description="Read my bio or my blog">
+      <ProfilePicture slot="icon" size={48} borderSize="border-0" />
+    </LinkBox>
+    <LinkBox href="https://twitter.com/iansu" title="Twitter" description="Follow me on Twitter">
+      <TwitterIcon slot="icon" />
+    </LinkBox>
+    <LinkBox href="https://github.com/iansu" title="GitHub" description="Follow my work on GitHub">
+      <GitHubIcon slot="icon" />
+    </LinkBox>
+    <LinkBox href="https://www.linkedin.com/in/iansu" title="LinkedIn" description="Connect with me on LinkedIn">
+      <LinkedInIcon slot="icon" />
+    </LinkBox>
+    <LinkBox href="https://www.polywork.com/iansu" title="Polywork" description="Connect with me on Polywork">
+      <PolyworkIcon slot="icon" />
+    </LinkBox>
+    <LinkBox href="https://www.neofinancial.com/jobs" title="Neo Financial" description="Work with me at Neo">
+      <NeoIcon slot="icon" />
+    </LinkBox>
+  </ul>
+</Layout>

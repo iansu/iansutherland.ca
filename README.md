@@ -12,10 +12,6 @@ Personal site of [Ian Sutherland](https://iansutherland.ca)
 1. `npm start`
 1. Go to [localhost:3000](http://localhost:3000)
 
-### Storybook
-
-1. `npm run storybook`
-
 ## Copyright
 
-&copy; 2021 Ian Sutherland. All Rights Reserved.
+&copy; 2022 Ian Sutherland. All Rights Reserved.
