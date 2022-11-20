@@ -1,0 +1,18 @@
+---
+import Logo from '@components/logo.astro';
+import ThemeToggle from '@components/theme-toggle.astro';
+import { TwitterIcon, GitHubIcon } from '@components/icons.astro';
+---
+
+<div class="flex justify-between pt-10 pb-12" style={{ height: '136px' }}>
+  <Logo withName={true} />
+  <div class="mt-3 flex space-x-3 text-black dark:text-white">
+    <a href="https://twitter.com/iansu" class="inline-block h-5 w-5 md:h-6 md:w-6">
+      <TwitterIcon />
+    </a>
+    <a href="https://github.com/iansu" class="inline-block h-5 w-5 md:h-6 md:w-6">
+      <GitHubIcon />
+    </a>
+    <ThemeToggle />
+  </div>
+</div>

@@ -1,0 +1,15 @@
+---
+export interface Props {
+  borderSize?: string;
+  size?: number;
+}
+
+const { borderSize = 'border-4', size = 128 } = Astro.props;
+---
+
+<div
+  class={`mx-auto rounded-full bg-gray-200 dark:bg-gray-500 ${borderSize} flex-shrink-0 overflow-hidden border-gray-300 dark:border-gray-600`}
+  style={{ width: `${size}px`, height: `${size}px` }}
+>
+  <img src="/ian-sutherland-profile.jpg" width={size} height={size} object-position="-4% -1.5%" alt="Profile" />
+</div>

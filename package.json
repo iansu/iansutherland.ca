@@ -1,8 +1,8 @@
 {
   "name": "iansutherland.ca",
+  "version": "2.2.0",
   "description": "Personal site of Ian Sutherland",
-  "version": "2.1.0",
-  "author": "Ian Sutherland",
+  "author": "Ian Sutherland <ian@iansutherland.ca>",
   "license": "MIT",
   "private": true,
   "homepage": "https://iansutherland.ca",
@@ -10,48 +10,27 @@
     "type": "git",
     "url": "https://github.com/iansu/iansutherland.ca"
   },
-  "engines": {
-    "node": ">=14.0.0"
-  },
+  "type": "module",
   "scripts": {
-    "start": "next dev",
-    "start:production": "next start",
-    "build": "next build",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "storybook:build": "build-storybook",
-    "clean": "rimraf .next",
-    "lint": "next lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,yaml,yml,md}\"",
-    "prepare": "husky install",
-    "precommit": "pretty-quick --staged && next lint"
+    "start": "astro dev",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write \"**/*.{ts,tsx,js,mjs,cjs,json,yaml,yml,md,mdx,astro,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,cjs,json,yaml,yml,md,mdx,astro,css}\""
   },
   "dependencies": {
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.5",
-    "next": "^12.1.0",
-    "next-themes": "^0.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "@astrojs/tailwind": "^2.1.2",
+    "astro": "^1.6.10",
+    "astro-analytics": "^2.5.0",
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.7",
-    "@types/react": "^17.0.39",
-    "@types/styled-components": "^5.1.24",
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
-    "husky": "^7.0.4",
-    "postcss": "^8.4.7",
-    "prettier": "^2.5.1",
-    "pretty-quick": "^3.1.3",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^3.0.23",
-    "typescript": "^4.6.2"
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.7.0",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "pretty-quick": "^3.1.3"
   }
 }

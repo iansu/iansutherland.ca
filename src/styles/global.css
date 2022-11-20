@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
+}
+
 .content-links a,
 .content-links a:visited {
   color: black;
@@ -36,22 +41,4 @@ html.dark .content-links a:hover {
 
 html.dark .content-links a:active {
   color: rgba(229, 231, 235, 1);
-}
-
-.color-angellist,
-.hover-color-angellist:hover {
-  color: #000;
-}
-
-.dark .hover-color-angellist:hover {
-  color: #fff;
-}
-
-.color-github,
-.hover-color-github:hover {
-  color: #181717;
-}
-
-.dark .hover-color-github:hover {
-  color: #fff;
 }
