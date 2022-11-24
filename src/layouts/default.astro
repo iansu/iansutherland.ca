@@ -11,6 +11,7 @@ export interface Props {
 
 const title = getTitle(Astro.props.title);
 const description = getDescription(Astro.props.description);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!DOCTYPE html>
@@ -29,6 +30,7 @@ const description = getDescription(Astro.props.description);
     <meta property="og:image:height" content="512" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="iansu" />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
     <GoogleAnalytics id="UA-156492295-1" />

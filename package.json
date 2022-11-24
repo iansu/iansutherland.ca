@@ -21,6 +21,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,cjs,json,yaml,yml,md,mdx,astro,css}\""
   },
   "dependencies": {
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.2",
     "astro": "^1.6.10",
     "astro-analytics": "^2.5.0",
