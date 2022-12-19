@@ -1,5 +1,16 @@
 {
   "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/.well-known/webfinger",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/jrd+json"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/files/:match*",

@@ -2,7 +2,15 @@
 import Layout from '@layouts/page.astro';
 import ProfilePicture from '@components/profile-picture.astro';
 import LinkBox from '@components/link-box.astro';
-import { GitHubIcon, LinkedInIcon, MastodonIcon, NeoIcon, PolyworkIcon, TwitterIcon } from '@components/icons.astro';
+import {
+  DiscordIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  MastodonIcon,
+  NeoIcon,
+  PolyworkIcon,
+  TwitterIcon,
+} from '@components/icons.astro';
 ---
 
 <Layout title="Links" description="Links to my various social media and other online profiles.">
@@ -18,6 +26,9 @@ import { GitHubIcon, LinkedInIcon, MastodonIcon, NeoIcon, PolyworkIcon, TwitterI
     </LinkBox>
     <LinkBox href="https://mas.to/@iansu" title="Mastodon" description="Follow me on Mastodon">
       <MastodonIcon slot="icon" />
+    </LinkBox>
+    <LinkBox href="https://discordapp.com/users/iansu#7006" title="Discord" description="Message me on Discord">
+      <DiscordIcon slot="icon" />
     </LinkBox>
     <LinkBox href="https://www.linkedin.com/in/iansu" title="LinkedIn" description="Connect with me on LinkedIn">
       <LinkedInIcon slot="icon" />
