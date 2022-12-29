@@ -1,0 +1,21 @@
+---
+export interface Props {
+  href: string;
+  title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<li
+  class="mb-1 list-none rounded hover:border-gray-300 hover:bg-gray-100 dark:hover:border-gray-600 dark:hover:bg-gray-700"
+>
+  <a href={href}>
+    <div class="flex items-center p-4">
+      <div class="mr-4 w-6 h-6 flex flex-col justify-center"><slot name="icon" /></div>
+      <div class="block flex-grow">
+        <p class="text-lg font-bold">{title}</p>
+      </div>
+    </div>
+  </a>
+</li>

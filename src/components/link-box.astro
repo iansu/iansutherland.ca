@@ -1,17 +1,21 @@
 ---
+import clsx from 'clsx';
+
 export interface Props {
   class?: string;
   description: string;
-  as?: string;
   href: string;
   title: string;
 }
 
-const { class: className, description, as = 'li', href, title } = Astro.props;
+const { class: className, description, href, title } = Astro.props;
 ---
 
 <li
-  class={`${className} mb-4 list-none rounded-md border border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-gray-600 dark:hover:bg-gray-700`}
+  class={clsx(
+    className,
+    'mb-4 list-none rounded-md border border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-gray-600 dark:hover:bg-gray-700'
+  )}
 >
   <a href={href}>
     <div class="flex items-center p-4">

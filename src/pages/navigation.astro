@@ -1,0 +1,20 @@
+---
+import { DocumentIcon } from '@heroicons/react/24/solid';
+
+import Layout from '@layouts/page.astro';
+import NavigationLink from '@components/navigation/link.astro';
+
+import { links } from '@lib/links';
+---
+
+<Layout title="Navigation" description="Links to other pages on this site">
+  <ul>
+    {
+      links.map((link) => (
+        <NavigationLink href={link.url} title={link.title}>
+          <DocumentIcon slot="icon" />
+        </NavigationLink>
+      ))
+    }
+  </ul>
+</Layout>
