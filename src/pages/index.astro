@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/default.astro';
 import Container from '@components/container.astro';
-import ThemeToggle from '../components/theme-toggle.astro';
+import NavigationToggle from '../components/navigation-toggle.astro';
 import ProfilePicture from '../components/profile-picture.astro';
 import Bio from '@components/bio.astro';
 import { TwitterIcon, GitHubIcon } from '@components/icons.astro';
@@ -10,7 +10,7 @@ import { TwitterIcon, GitHubIcon } from '@components/icons.astro';
 <Layout>
   <Container width="max-w-6xl" paddingBreakpoint="lg:px-0">
     <div class="mt-6 flex flex-row-reverse">
-      <ThemeToggle />
+      <NavigationToggle />
     </div>
     <div class="pt-8 pb-16 md:pt-12 md:pb-24">
       <ProfilePicture size={192} borderSize="border-8" />

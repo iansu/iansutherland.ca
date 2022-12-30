@@ -1,0 +1,20 @@
+---
+import { HomeIcon, MicrophoneIcon, UserIcon } from '@heroicons/react/24/outline/index.js';
+
+import Layout from '@layouts/page.astro';
+import NavigationLink from '@components/navigation-link.astro';
+---
+
+<Layout title="Navigation" description="Links to other pages on this site" noIndex={true}>
+  <ul>
+    <NavigationLink href="/" title="Home">
+      <HomeIcon slot="icon" />
+    </NavigationLink>
+    <NavigationLink href="https://pages.iansutherland.ca/speaking" title="Speaking">
+      <MicrophoneIcon slot="icon" />
+    </NavigationLink>
+    <NavigationLink href="/about" title="About">
+      <UserIcon slot="icon" />
+    </NavigationLink>
+  </ul>
+</Layout>

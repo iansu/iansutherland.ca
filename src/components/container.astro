@@ -1,4 +1,6 @@
 ---
+import clsx from 'clsx';
+
 export interface Props {
   children: any;
   paddingBreakpoint?: string;
@@ -8,6 +10,6 @@ export interface Props {
 const { paddingBreakpoint = 'md:px-0', width = 'max-w-3xl' } = Astro.props;
 ---
 
-<div class={`container ${width} mx-auto min-h-screen px-4 ${paddingBreakpoint} flex flex-col`}>
+<div class={clsx('container mx-auto min-h-screen px-4 flex flex-col', width, paddingBreakpoint)}>
   <slot />
 </div>
