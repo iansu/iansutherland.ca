@@ -12,9 +12,9 @@ const { href, title } = Astro.props;
 >
   <a href={href}>
     <div class="flex items-center p-4">
-      <div class="mr-4 w-6 h-6 flex flex-col justify-center"><slot name="icon" /></div>
+      <div class="mr-2 w-6 h-6 flex flex-col justify-center text-gray-500"><slot name="icon" /></div>
       <div class="block flex-grow">
-        <p class="text-lg font-bold">{title}</p>
+        <p class="text-lg text-gray-700">{title}</p>
       </div>
     </div>
   </a>

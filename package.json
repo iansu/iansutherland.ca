@@ -17,6 +17,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test": "jest",
     "format": "prettier --write \"**/*.{ts,tsx,js,mjs,cjs,json,yaml,yml,md,mdx,astro,css}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,cjs,json,yaml,yml,md,mdx,astro,css}\""
   },
@@ -37,7 +38,10 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "esbuild-jest": "^0.5.0",
     "husky": "^8.0.0",
+    "jest": "^29.3.1",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.7.0",
     "prettier-plugin-tailwindcss": "^0.1.13",

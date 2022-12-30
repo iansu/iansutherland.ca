@@ -1,7 +1,7 @@
 ---
 import { GoogleAnalytics } from 'astro-analytics';
 
-import CommandPalette from '@components/navigation/command-palette.jsx';
+import CommandPalette from '@components/command-palette';
 import { getTitle, getDescription } from '@lib/meta';
 
 import '../styles/global.css';
@@ -40,5 +40,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <body class="bg-white transition duration-200 dark:bg-neutral-900">
     <CommandPalette client:load />
     <slot />
-  </body>
+  </body><script>
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme') || 'light';
+      }
+
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+
+      return 'light';
+    })();
+
+    if (theme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </html>
