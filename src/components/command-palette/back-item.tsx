@@ -1,5 +1,5 @@
 import { Combobox } from '@headlessui/react';
-import { ArrowUturnLeftIcon } from '@heroicons/react/24/outline';
+import { ArrowUturnLeftIcon } from '@heroicons/react/24/outline/index.js';
 import clsx from 'clsx';
 
 import type { MenuItemNode } from '@lib/menu';

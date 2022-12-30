@@ -1,4 +1,4 @@
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline/index.js';
 
 export interface HeaderProps {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;

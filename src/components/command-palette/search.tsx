@@ -1,5 +1,5 @@
 import { Combobox } from '@headlessui/react';
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
+import { MagnifyingGlassIcon } from '@heroicons/react/20/solid/index.js';
 
 export interface SearchProps {
   search: (query: string) => void;
