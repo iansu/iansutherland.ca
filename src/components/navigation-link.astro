@@ -8,13 +8,13 @@ const { href, title } = Astro.props;
 ---
 
 <li
-  class="mb-1 list-none rounded hover:border-gray-300 hover:bg-gray-100 dark:hover:border-gray-600 dark:hover:bg-gray-700"
+  class="mb-1 list-none rounded hover:border-gray-300 hover:bg-gray-100 dark:hover:border-gray-700 dark:hover:bg-gray-800"
 >
   <a href={href}>
     <div class="flex items-center p-4">
-      <div class="mr-2 w-6 h-6 flex flex-col justify-center text-gray-500"><slot name="icon" /></div>
+      <div class="mr-3 w-6 h-6 flex flex-col justify-center text-gray-500 dark:text-gray-400"><slot name="icon" /></div>
       <div class="block flex-grow">
-        <p class="text-lg text-gray-700">{title}</p>
+        <p class="text-lg text-gray-700 dark:text-gray-300">{title}</p>
       </div>
     </div>
   </a>

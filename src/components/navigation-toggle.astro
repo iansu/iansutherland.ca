@@ -2,7 +2,7 @@
 ---
 
 <a id="navigation-toggle" href="/navigation">
-  <div class="h-6 w-6 cursor-pointer">
+  <div class="pt-3 px-2 h-10 w-10 cursor-pointer">
     <svg
       class="navigation-icon"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,8 +19,13 @@
 </a>
 
 <style>
-  :global(.dark) .navigation-icon {
+  :global(.dark) #navigation-toggle {
     color: white;
+  }
+
+  :global(.dark) #navigation-toggle:hover,
+  #navigation-toggle:hover {
+    color: #f6aa26;
   }
 </style>
 

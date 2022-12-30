@@ -9,11 +9,15 @@ import '../styles/global.css';
 export interface Props {
   title?: string;
   description?: string;
+  noIndex?: boolean;
+  noFollow?: boolean;
 }
 
 const title = getTitle(Astro.props.title);
 const description = getDescription(Astro.props.description);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const noIndex = Astro.props.noIndex === undefined ? false : Astro.props.noIndex;
+const noFollow = Astro.props.noFollow === undefined ? false : Astro.props.noFollow;
 ---
 
 <!DOCTYPE html>
@@ -23,6 +27,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    {noIndex && noFollow && <meta name="robots" content="noindex,nofollow" />}
+    {noFollow && !noIndex && <meta name="robots" content="noindex" />}
+    {noIndex && !noFollow && <meta name="robots" content="noindex" />}
     <meta property="og:url" content="https://iansutherland.ca/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en" />
@@ -37,26 +44,27 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <GoogleAnalytics id="UA-156492295-1" />
   </head>
-  <body class="bg-white transition duration-200 dark:bg-neutral-900">
-    <CommandPalette client:load />
+  <body class="bg-white transition duration-200 dark:bg-black">
+    <CommandPalette client:only="react" />
     <slot />
-  </body><script>
-    const theme = (() => {
-      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-        return localStorage.getItem('theme') || 'light';
+    <script>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme') || 'light';
+        }
+
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+
+        return 'light';
+      })();
+
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
       }
-
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-      }
-
-      return 'light';
-    })();
-
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
+    </script>
+  </body>
 </html>

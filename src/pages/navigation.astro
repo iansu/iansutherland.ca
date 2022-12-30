@@ -5,7 +5,7 @@ import Layout from '@layouts/page.astro';
 import NavigationLink from '@components/navigation-link.astro';
 ---
 
-<Layout title="Navigation" description="Links to other pages on this site">
+<Layout title="Navigation" description="Links to other pages on this site" noIndex={true}>
   <ul>
     <NavigationLink href="/" title="Home">
       <HomeIcon slot="icon" />
