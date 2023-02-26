@@ -19,7 +19,7 @@ const { class: className, description, href, title } = Astro.props;
 >
   <a href={href}>
     <div class="flex items-center p-4">
-      <div class="mr-6 w-12 h-12 flex flex-col justify-center"><slot name="icon" /></div>
+      <div class="mr-6 flex h-12 w-12 flex-col justify-center"><slot name="icon" /></div>
       <div class="block flex-grow">
         <h2 class="text-xl font-bold">{title}</h2>
         <p>{description}</p>
