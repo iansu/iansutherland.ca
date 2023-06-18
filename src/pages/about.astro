@@ -25,7 +25,7 @@ import {
     <p>
       If you&rsquo;re interested in my open source work take a look at my
       <a href="https://github.com/iansu">GitHub</a> profile or follow me on
-      <a href="https://twitter.com/iansu">Twitter</a>. If you&rsquo;re interested in my professional work you can
+      <a href="https://cosocial.ca/@iansu">Mastodon</a>. If you&rsquo;re interested in my professional work you can
       connect with me on
       <a href="https://www.linkedin.com/in/iansu">LinkedIn</a>.
     </p>
@@ -48,7 +48,7 @@ import {
     <h3 class="mb-3 mt-12 text-lg font-bold">Elsewhere</h3>
     <ul class="flex list-none flex-wrap">
       <li class="mr-6 mb-2">
-        <a href="https://mas.to/@iansu" class="inline-block h-6 w-6">
+        <a href="https://cosocial.ca/@iansu" class="inline-block h-6 w-6">
           <MastodonIcon />
         </a>
       </li>
@@ -63,7 +63,7 @@ import {
         </a>
       </li>
       <li class="mr-6 mb-2">
-        <a href="https://discordapp.com/users/iansu#7006" class="inline-block h-6 w-6">
+        <a href="https://discordapp.com/users/iansutherland" class="inline-block h-6 w-6">
           <DiscordIcon />
         </a>
       </li>
@@ -95,10 +95,17 @@ import {
       <h3 class="mb-3 text-lg font-bold">Get In Touch</h3>
       <p>
         Got something to say? Want to take over the world? Send me a message on{' '}
-        <a href="https://twitter.com/iansu">Twitter</a> or, if you&rsquo;re not into the whole brevity thing, <a
-          href="mailto:hello@iansutherland.ca">send me an email</a
+        <a href="https://cosocial.ca/@iansu">Mastodon</a> or, if you&rsquo;re not into the whole brevity thing, <a
+          id="about-contact-info"
+          href="#">send me an email</a
         >.
       </p>
     </div>
   </div>
 </Layout>
+
+<script>
+  document
+    .getElementById('about-contact-info')
+    ?.setAttribute('href', ['mailto', ':', 'hello', '@', 'iansutherland.ca'].join(''));
+</script>
